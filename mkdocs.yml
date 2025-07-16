@@ -1,0 +1,29 @@
+site_name: ZenPost Dokumentation
+site_url: https://theoriginalbitter.github.io/ZenPost/
+repo_url: https://github.com/THEORIGINALBITTER/ZenPost
+repo_name: ZenPost auf GitHub
+
+theme:
+  name: material
+  language: de
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - toc.integrate
+    - search.suggest
+    - content.code.annotate
+
+nav:
+  - Startseite: index.md
+  - Editor: editor.md
+  - Bridge: bridge.md
+  - Fehler & Lösungen: fehler-und-loesungen.md
+  - Changelog: changelog.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - codehilite
+  - admonition
+  - footnotes
