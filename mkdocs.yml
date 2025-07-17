@@ -6,19 +6,36 @@ repo_name: ZenPost auf GitHub
 theme:
   name: material
   language: de
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: indigo
+  font:
+    text: Roboto
+    code: Fira Code
   features:
     - navigation.instant
     - navigation.tracking
     - toc.integrate
     - search.suggest
     - content.code.annotate
+    - navigation.tabs
+    - navigation.top
 
 nav:
   - Startseite: index.md
-  - Editor: editor.md
-  - Bridge: bridge.md
-  - Fehler & Lösungen: fehler-und-loesungen.md
-  - Changelog: changelog.md
+  - Inhalte:
+      - Editor-Modul: editor.md
+      - Bridge (SwiftUI + JS): bridge.md
+      - Fehler & Lösungen: fehler-und-loesungen.md
+      - Changelog: changelog.md
+  - ❤️ Haltung: haltung.md
+  - 🔙 Zurück zu GitHub: repo.md
 
 markdown_extensions:
   - toc:
