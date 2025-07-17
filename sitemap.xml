@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://theoriginalbitter.github.io/ZenPost/</loc>
+         <loc>https://docs.denisbitter.de/fehler-und-loesungen/</loc>
          <lastmod>2025-07-17</lastmod>
     </url>
     <url>
-         <loc>https://theoriginalbitter.github.io/ZenPost/bridge/</loc>
+         <loc>https://docs.denisbitter.de/haltung/</loc>
          <lastmod>2025-07-17</lastmod>
     </url>
     <url>
-         <loc>https://theoriginalbitter.github.io/ZenPost/changeLog/</loc>
-         <lastmod>2025-07-17</lastmod>
-    </url>
-    <url>
-         <loc>https://theoriginalbitter.github.io/ZenPost/editor/</loc>
-         <lastmod>2025-07-17</lastmod>
-    </url>
-    <url>
-         <loc>https://theoriginalbitter.github.io/ZenPost/fehler_und_loesungen/</loc>
-         <lastmod>2025-07-17</lastmod>
-    </url>
-    <url>
-         <loc>https://theoriginalbitter.github.io/ZenPost/haltung/</loc>
-         <lastmod>2025-07-17</lastmod>
-    </url>
-    <url>
-         <loc>https://theoriginalbitter.github.io/ZenPost/repo/</loc>
+         <loc>https://docs.denisbitter.de/repo/</loc>
          <lastmod>2025-07-17</lastmod>
     </url>
 </urlset>

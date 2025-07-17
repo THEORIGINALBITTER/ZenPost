@@ -8,10 +8,8 @@
       
       
       
-        <link rel="canonical" href="https://theoriginalbitter.github.io/ZenPost/bridge/">
+        <link rel="canonical" href="https://docs.denisbitter.de/fehler-und-loesungen/">
       
-      
-        <link rel="prev" href="../editor/">
       
       
         <link rel="next" href="../haltung/">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Bridge (SwiftUI + JS) - ZenPost Dokumentation</title>
+        <title>Fehler & Lösungen - ZenPost Dokumentation</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bridge-swiftui-js" class="md-skip">
+        <a href="#fehler-losungen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -108,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bridge (SwiftUI + JS)
+              Fehler & Lösungen
             
           </span>
         </div>
@@ -213,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../index.md" class="md-tabs__link">
         
   
   
@@ -236,7 +234,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../editor/" class="md-tabs__link">
+        <a href="../editor.md" class="md-tabs__link">
           
   
   
@@ -340,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../index.md" class="md-nav__link">
         
   
   
@@ -408,12 +406,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../editor/" class="md-nav__link">
+      <a href="../editor.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Editor-Modul
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bridge.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bridge (SwiftUI + JS)
     
   </span>
   
@@ -445,7 +466,7 @@
   
   
   <span class="md-ellipsis">
-    Bridge (SwiftUI + JS)
+    Fehler & Lösungen
     
   </span>
   
@@ -458,7 +479,7 @@
   
   
   <span class="md-ellipsis">
-    Bridge (SwiftUI + JS)
+    Fehler & Lösungen
     
   </span>
   
@@ -481,18 +502,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aufbau" class="md-nav__link">
+  <a href="#problem-cname-nicht-gefunden" class="md-nav__link">
     <span class="md-ellipsis">
-      Aufbau
+      Problem: CNAME nicht gefunden?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ziel" class="md-nav__link">
+  <a href="#problem-seite-ladt-nicht-korrekt" class="md-nav__link">
     <span class="md-ellipsis">
-      Ziel
+      Problem: Seite lädt nicht korrekt?
     </span>
   </a>
   
@@ -502,29 +523,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fehler-und-loesungen.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Fehler & Lösungen
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -623,19 +621,12 @@
   
 
 
-<h1 id="bridge-swiftui-js">🌉 Bridge: SwiftUI + JS<a class="headerlink" href="#bridge-swiftui-js" title="Permanent link">&para;</a></h1>
-<p>ZenPost verwendet eine Bridge zwischen SwiftUI und JavaScript,<br />
-um Markdown-Inhalte direkt in einen Editor einzubinden.</p>
-<h2 id="aufbau">Aufbau<a class="headerlink" href="#aufbau" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>SwiftUI</strong>: steuert die native Oberfläche (macOS)</li>
-<li><strong>Editor.js</strong>: verarbeitet strukturierte Inhalte im Web-Modul</li>
-<li><strong>Bridge</strong>: überträgt Inhalte zwischen beiden Welten</li>
-</ul>
-<h2 id="ziel">Ziel<a class="headerlink" href="#ziel" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Schreiben, exportieren und veröffentlichen – lokal, bewusst, verbunden.</p>
-</blockquote>
+<h1 id="fehler-losungen">🐞 Fehler &amp; Lösungen<a class="headerlink" href="#fehler-losungen" title="Permanent link">&para;</a></h1>
+<h2 id="problem-cname-nicht-gefunden">Problem: CNAME nicht gefunden?<a class="headerlink" href="#problem-cname-nicht-gefunden" title="Permanent link">&para;</a></h2>
+<p>Lösung: Stelle sicher, dass die Datei <code>CNAME</code> im <code>docs/</code>-Ordner liegt<br />
+und <code>mkdocs gh-deploy</code> korrekt ausgeführt wurde.</p>
+<h2 id="problem-seite-ladt-nicht-korrekt">Problem: Seite lädt nicht korrekt?<a class="headerlink" href="#problem-seite-ladt-nicht-korrekt" title="Permanent link">&para;</a></h2>
+<p>Lösung: Browser-Cache leeren, DNS prüfen, GitHub Pages Settings kontrollieren.</p>
 
 
 
