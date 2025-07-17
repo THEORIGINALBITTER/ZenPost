@@ -24,6 +24,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -36,8 +39,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Fira Code"}</style>
       
     
     
@@ -51,7 +54,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -67,9 +77,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
     <a href=".." title="ZenPost Dokumentation" class="md-header__button md-logo" aria-label="ZenPost Dokumentation" data-md-component="logo">
       
@@ -97,6 +105,24 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -167,6 +193,92 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Startseite
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../editor/" class="md-tabs__link">
+          
+  
+  
+  Inhalte
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../haltung/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ❤️ Haltung
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../repo/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🔙 Zurück zu GitHub
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -180,10 +292,12 @@
                     
 
 
+  
+
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="ZenPost Dokumentation" class="md-nav__button md-logo" aria-label="ZenPost Dokumentation" data-md-component="logo">
       
@@ -236,13 +350,54 @@
   
   
   
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inhalte
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Inhalte
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../editor/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Editor
+    Editor-Modul
     
   </span>
   
@@ -251,9 +406,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -264,7 +420,7 @@
   
   
   <span class="md-ellipsis">
-    Bridge
+    Bridge (SwiftUI + JS)
     
   </span>
   
@@ -273,9 +429,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -295,9 +452,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -309,6 +467,58 @@
   
   <span class="md-ellipsis">
     Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../haltung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ❤️ Haltung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../repo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔙 Zurück zu GitHub
     
   </span>
   
@@ -360,6 +570,12 @@
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -388,7 +604,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate", "search.suggest", "content.code.annotate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate", "search.suggest", "content.code.annotate", "navigation.tabs", "navigation.top"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
